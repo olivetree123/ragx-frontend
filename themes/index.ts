@@ -26,8 +26,10 @@ export const lightTheme = {
   '--g-main-sidebar-menu-active-color': '#fff',
   // 次导航
   '--g-sub-sidebar-bg': '#fff',
-  '--g-sub-sidebar-logo-bg': '#0f0f0f',
-  '--g-sub-sidebar-logo-color': '#fff',
+  // '--g-sub-sidebar-logo-bg': '#0f0f0f',
+  '--g-sub-sidebar-logo-bg': '#fff',
+  // '--g-sub-sidebar-logo-color': '#fff',
+  '--g-sub-sidebar-logo-color': '#0f0f0f',
   '--g-sub-sidebar-menu-color': '#0f0f0f',
   '--g-sub-sidebar-menu-hover-bg': '#dde1e3',
   '--g-sub-sidebar-menu-hover-color': '#0f0f0f',
