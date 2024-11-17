@@ -38,19 +38,19 @@ api.interceptors.response.use(
      * 规则是当 status 为 1 时表示请求成功，为 0 时表示接口需要登录或者登录状态失效，需要重新登录
      * 请求出错时 error 会返回错误信息
      */
-    if (response.data.status === 1) {
-      if (response.data.error !== '') {
-        // 错误提示
-        Message.error(response.data.error, {
-          zIndex: 2000,
-        })
-        return Promise.reject(response.data)
-      }
-    }
-    else {
-      useUserStore().logout()
-    }
-    return Promise.resolve(response.data)
+    // if (response.data.status === 1) {
+    //   if (response.data.error !== '') {
+    //     // 错误提示
+    //     Message.error(response.data.error, {
+    //       zIndex: 2000,
+    //     })
+    //     return Promise.reject(response.data)
+    //   }
+    // }
+    // else {
+    //   useUserStore().logout()
+    // }
+    return Promise.resolve(response)
   },
   (error) => {
     let message = error.message
